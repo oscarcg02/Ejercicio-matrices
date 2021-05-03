@@ -253,7 +253,14 @@ public class Matriz {
                            for(int j = 0; j < resultado_producto[i].length; j++) {
                                System.out.print("[ " + resultado_producto[i][j] + " ]");
                            }
-
+                           System.out.print("   =   ");
+                           for(int j = 0; j < matrizMulti[i].length; j++) {
+                               System.out.print("[ " + matrizMulti[i][j] + " ]");
+                           }
+                           System.out.print("   =   ");
+                           for(int j = 0; j < matrizMulti1[i].length; j++) {
+                               System.out.print("[ " + matrizMulti1[i][j] + " ]");
+                           }
                            System.out.println("");
                        } 
                             // Imprime la primera
@@ -384,14 +391,17 @@ public class Matriz {
                                 System.out.print("[ " + matrizDisgonal[i][j] + " ]");
                             }
                             System.out.println("");
-                        }
-                		System.out.println(""); 
-                		System.out.print("La diagonal es: ");
-                		System.out.println(""); 
+                        } 
                 		
                 		//Imprime los numeros de su diagonal
                 		for(int i = 0; i < matrizDisgonal.length; i++) {
-                			System.out.print( matrizDisgonal[i][i]);
+                			if (i == 0) {
+                				System.out.print("La diagonal es: " + matrizDisgonal[i][i]);
+                			}
+                			else{
+                				System.out.print( matrizDisgonal[i][i]);
+                			}
+                			
                 		}
                   		System.out.println("");
                   		System.out.println("");
